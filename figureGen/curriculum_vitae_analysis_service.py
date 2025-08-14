@@ -12,7 +12,7 @@ import re
 import json
 import asyncio
 
-
+    
 class CurriculumVitaeAnalysisService:
     def __init__(self, professional_personnel_id: int) -> None:
         self.chatbot = ChatOpenAI(settings.OPENAI_KEY, settings.OPENAI_BASE_URL)

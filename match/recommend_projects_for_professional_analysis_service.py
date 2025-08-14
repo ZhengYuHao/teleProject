@@ -95,7 +95,7 @@ class RecommendProjectsForProfessionalAnalysisService:
     async def type_change(self, answer: str):
         # 处理答案中的特殊字符
         new_text = answer.replace("```", "")
-        new_text1 = new_text.replace("json", "")
+        new_text1 = new_text.replace("jso   n", "")
 
         # 将 JSON 字符串转换为python对象
         data = json.loads(new_text1)
